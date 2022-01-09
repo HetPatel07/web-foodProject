@@ -144,12 +144,17 @@
     <!-- custom js file link  -->
     <script>
       let categoryMain = document.querySelector(".category .box-container");
-      let store = sessionStorage.getItem("store");
+      // let store = sessionStorage.getItem("store");
+      // console.log(store);
+      var para = new URLSearchParams(window.location.search);
+      var store = para.get("name");
       console.log(store);
+
       let url =
         "https://www.themealdb.com/api/json/v1/1/filter.php?c=" +
         store +
         "";
+      console.log(url);
 
       fetch(url)
         .then((res) => res.json())

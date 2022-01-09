@@ -124,10 +124,10 @@ function content(data, main) {
     $(boxInner).append(
       '<p class="desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo iure beatae in enim tenetur ipsum quidem neque autem magni!</p>'
     );
-    let store = "'"+data.categories[i].strCategory+"'";
+    let store = data.categories[i].strCategory;
     // console.log(store)
     
-    $(boxInner).append('<a href="#" onclick="category('+store+')"  class="btn">Show more</a>');
+    $(boxInner).append('<a href="./catergory.html?name='+store+'"  class="btn">Show more</a>');
     box.append(boxInner);
     main.append(box);
     // console.log(box);
@@ -135,17 +135,17 @@ function content(data, main) {
 }
  
 // function to redirect to category page
-function category(categoryName){
+// function category(categoryName){
   
-  sessionStorage.setItem("store", categoryName);
-  // let url = "https://www.themealdb.com/api/json/v1/1/filter.php?c="+categoryName+"";
-  // let categoryMain = sessionStorage.getItem("categoryMain");
-  // console.log(categoryMain);
-  // fetch(url)
-  // .then((res) => res.json())
-  // .then((data) => categoryContent(data,categoryMain));
-  window.location.href = "./catergory.html";
-}
+//   sessionStorage.setItem("store", categoryName);
+//   // let url = "https://www.themealdb.com/api/json/v1/1/filter.php?c="+categoryName+"";
+//   // let categoryMain = sessionStorage.getItem("categoryMain");
+//   // console.log(categoryMain);
+//   // fetch(url)
+//   // .then((res) => res.json())
+//   // .then((data) => categoryContent(data,categoryMain));
+//   window.location.href = "./catergory.html";
+// }
 
 
 // Categories api ends
