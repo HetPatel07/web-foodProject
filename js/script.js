@@ -177,7 +177,8 @@ fetch("https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian")
       $(boxInner).append(
         '<p class="desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo iure beatae in enim tenetur ipsum quidem neque autem magni!</p>'
       );
-      $(boxInner).append('<a href="#" class="btn">Read more</a>');
+      let productId = data.meals[i].idMeal;
+      $(boxInner).append('<a href="./productDesc.html?id='+productId+'" class="btn">Read more</a>');
       box.append(boxInner);
       main.append(box);
       // console.log(box);

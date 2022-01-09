@@ -621,6 +621,9 @@ header .icons #menu-bars{
     height: auto !important;
 }
 
+.product .ingredients ul{
+    font-size: 15px;
+}
 /* product desciption page css ends */
 
 

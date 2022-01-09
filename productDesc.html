@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Complete Responsive Food Website Design Tutorial</title>
+    <title>Product desciption</title>
 
     <link
       rel="stylesheet"
@@ -32,7 +32,7 @@
       <a href="#" class="logo"><i class="fas fa-utensils"></i>resto.</a>
 
       <nav class="navbar">
-        <a class="active" href="#home">home</a>
+        <a class="active" href="/index.html">home</a>
         <a href="#dishes">dishes</a>
         <a href="#about">about</a>
         <a href="#menu">menu</a>
@@ -73,22 +73,54 @@
       <h3 class="sub-heading mt-5">our dish</h3>
       <h1 class="heading">Description</h1>
 
-      <div class="box-container product row justify-content-around">
-          
-          <div class="box col-lg-4"><img src="https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg" alt=""></div>
-          <div class="col-lg-7">
-              <p class="productDesc"><span>Meal Name:</span> Apam balik</p>
-              <p class="productDesc"><span>Meal Category:</span> Dessert</p>
-              <p class="productDesc"><span>Country Origin:</span> Malaysian</p>
-              <p class="productDesc"><span>How to make: </span> Mix milk, oil and egg together. Sift flour, baking powder and salt into the mixture. Stir well until all ingredients are combined evenly.\r\n\r\nSpread some batter onto the pan. Spread a thin layer of batter to the side of the pan. Cover the pan for 30-60 seconds until small air bubbles appear.\r\n\r\nAdd butter, cream corn, crushed peanuts and sugar onto the pancake. Fold the pancake into half once the bottom surface is browned.\r\n\r\nCut into wedges and best eaten when it is warm.</p>
-              <p class="productDesc"><span>Ingredients:</span> Milk, Oil, Eggs, Flour, Baking Powder, Salt, Unsalted Butter, Sugar, Peanut Butter</p>
+      <div class="box-container row justify-content-around">
+        <!-- <div class="box col-lg-4">
+          <img
+            src="https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg"
+            alt="" class="productImg"
+          />
+        </div> -->
+        <!-- <div class="col-lg-7">
+          <p class="productDesc"><span>Meal Name:</span>Apam balik</p>
+          <p class="productDesc"><span>Meal Category:</span> Dessert</p>
+          <p class="productDesc"><span>Country Origin:</span> Malaysian</p>
+          <p class="productDesc">
+            <span>How to make: </span> Mix milk, oil and egg together. Sift
+            flour, baking powder and salt into the mixture. Stir well until all
+            ingredients are combined evenly.\r\n\r\nSpread some batter onto the
+            pan. Spread a thin layer of batter to the side of the pan. Cover the
+            pan for 30-60 seconds until small air bubbles appear.\r\n\r\nAdd
+            butter, cream corn, crushed peanuts and sugar onto the pancake. Fold
+            the pancake into half once the bottom surface is browned.\r\n\r\nCut
+            into wedges and best eaten when it is warm.
+          </p>
+          <div class="ingredients d-flex">
+            <p class="productDesc">
+              <span>Ingredients:</span> 
+            </p>
+            <ul class="mt-2 ml-5">
+              <li>Milk</li>
+              <li>Oil</li>
+              <li>Eggs</li>
+              <li>Baking Powder</li>
+              <li>Salt</li>
+              <li>Sugar</li>
+              <li>Peanut Butter</li>
+            </ul>
           </div>
-        
+        </div> -->
       </div>
-      <div class="tutorial col-12">
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6R8ffRRJcrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
+      <div class="tutorial col-12 d-flex justify-content-center mt-5">
+        <iframe
+          width="560"
+          height="315"
+          src=""
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="productVideo"
+        ></iframe>
       </div>
     </section>
 
@@ -156,58 +188,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="js/product.js"></script>
     <!-- custom js file link  -->
-    <script>
-    //   let categoryMain = document.querySelector(".category .box-container");
-    //   let store = sessionStorage.getItem("store");
-    //   console.log(store);
-    //   let url =
-    //     "https://www.themealdb.com/api/json/v1/1/filter.php?c=" +
-    //     store +
-    //     "";
-
-    //   fetch(url)
-    //     .then((res) => res.json())
-    //     .then((data) => categoryContent(data, categoryMain));
-    //   function categoryContent(data, main) {
-    //     // for(let i=0; i < data.le)
-    //     console.log(data);
-    //     for (let i = 0; i < data.meals.length; i++) {
-    //       let box = document.createElement("div");
-    //       let boxInner = document.createElement("div");
-    //       let heading = document.querySelector("h1")
-
-    //       heading.innerHTML = store + " category"
-    //       // let main = document.querySelector(".box-container");
-    //       $(box).addClass("box col-sm-12 col-md-6 col-lg-4 my-3");
-    //       $(boxInner).addClass("boxInner");
-    //       $(boxInner).append(
-    //         '<a href="#" class="fas fa-heart"></a> <a href="#" class="fas fa-eye"></a>'
-    //       );
-    //       $(boxInner).append(
-    //         '<img src=" ' + data.meals[i].strMealThumb + '" alt="">'
-    //       );
-    //       $(boxInner).append("<h3>" + data.meals[i].strMeal + "</h3>");
-    //       $(boxInner).append(
-    //         '<div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div>'
-    //       );
-    //       $(boxInner).append(
-    //         '<p class="desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo iure beatae in enim tenetur ipsum quidem neque autem magni!</p>'
-    //       );
-    //       // let store = "'"+data.categories[i].strCategory+"'";
-    //       // console.log(store)
-    //       $(boxInner).append(
-    //         '<a href="#" onclick="category"  class="btn">read more</a>'
-    //       );
-    //       box.append(boxInner);
-    //       main.append(box);
-    //       // console.log(box);
-    //     }
-    //   }
-
-    //   sessionStorage.clear();
-      console.log(categoryMain);
-    </script>
-    <script src="js/script.js"></script>
+    
+    <script src="js/script.js"></script> 
   </body>
 </html>
